@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        <i class="fa-solid fa-user-check"></i>
+        <h2>Attendance</h2>
+    </div>
+
+    <ul>
+        <li class="active"><i class="fa-solid fa-house"></i> Dashboard</li>
+        <li><i class="fa-solid fa-calendar-check"></i> Attendance</li>
+    </ul>
+
+</div>
+
+
+<div class="main">
+
+<header>
+
+<h1>Attendance Tracker</h1>
+
+<div class="search">
+
+<input type="text" id="search" placeholder="Search Student...">
+
+</div>
+
+</header>
+
+
+<div class="cards">
+
+<div class="card">
+<h3>Total</h3>
+<h2 id="total">0</h2>
+</div>
+
+<div class="card present">
+<h3>Present</h3>
+<h2 id="present">0</h2>
+</div>
+
+<div class="card late">
+<h3>Late</h3>
+<h2 id="late">0</h2>
+</div>
+
+<div class="card absent">
+<h3>Absent</h3>
+<h2 id="absent">0</h2>
+</div>
+
+</div>
+
+
+
+<div class="container">
+
+<div class="form-box">
+
+<h2>Add Attendance</h2>
+
+<input type="text" id="name" placeholder="Student Name">
+
+<input type="date" id="date">
+
+<select id="status">
+<option value="Present">Present</option>
+<option value="Late">Late</option>
+<option value="Absent">Absent</option>
+</select>
+
+<button id="addBtn">
+<i class="fa-solid fa-plus"></i>
+Add Attendance
+</button>
+
+</div>
+
+
+
+<div class="table-box">
+
+<h2>Attendance Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Name</th>
+<th>Date</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
