@@ -1,4 +1,4 @@
-# Attendance Tracker
+ # Attendance Tracker
 
 A simple web-based Attendance Tracker built with HTML, CSS, and JavaScript.
 
